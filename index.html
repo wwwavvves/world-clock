@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- momentjs -->
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock Project</title>
   </head>
   <body>
@@ -29,23 +32,12 @@
           <div class="city-clock">
             <div class="city-date">
               <div class="city">New York</div>
-              <div class="date">August 15th 2022</div>
+              <div class="date" id="date"></div>
             </div>
-            <div class="time">1:48:15 <span class="am-pm">AM</span></div>
-          </div>
-          <div class="city-clock">
-            <div class="city-date">
-              <div class="city">London</div>
-              <div class="date">August 15th 2022</div>
+            <div class="time-element">
+              <span id="time"></span>
+              <span class="am-pm" id="am-pm"></span>
             </div>
-            <div class="time">1:48:15 <span class="am-pm">AM</span></div>
-          </div>
-          <div class="city-clock">
-            <div class="city-date">
-              <div class="city">Sydney</div>
-              <div class="date">August 15th 2022</div>
-            </div>
-            <div class="time">1:48:15 <span class="am-pm">AM</span></div>
           </div>
         </section>
       </main>

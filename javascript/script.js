@@ -24,6 +24,18 @@ function updateTime() {
   let parisAmPmElement = parisElement.querySelector("#am-pm");
   let parisAmPm = moment().tz("Europe/Paris").format("a");
   parisAmPmElement.innerHTML = parisAmPm;
+
+  // Seoul
+  let seoulElement = document.querySelector("#seoul");
+  let seoulDateElement = seoulElement.querySelector("#date");
+  let seoulDate = moment().tz("Asia/Seoul").format("MMMM Do YYYY");
+  seoulDateElement.innerHTML = seoulDate;
+  let seoulTimeElement = seoulElement.querySelector("#time");
+  let seoulTime = moment().tz("Asia/Seoul").format("h:mm:ss");
+  seoulTimeElement.innerHTML = seoulTime;
+  let seoulAmPmElement = seoulElement.querySelector("#am-pm");
+  let seoulAmPm = moment().tz("Asia/Seoul").format("a");
+  seoulAmPmElement.innerHTML = seoulAmPm;
 }
 
 function updateCity(event) {
@@ -59,3 +71,10 @@ setInterval(updateTime, 1000);
 
 let cityDropdown = document.querySelector("#city-select-dropdown");
 cityDropdown.addEventListener("change", updateCity);
+
+function refreshPage() {
+  location.reload();
+}
+
+let worldClock = document.querySelector("#world-clock");
+worldClock.addEventListener("click", refreshPage);

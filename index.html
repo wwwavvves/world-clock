@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>World Clock</h1>
+        <h1 id="world-clock">World Clock</h1>
       </header>
       <main>
         <select name="city" id="city-select-dropdown">
@@ -45,6 +45,16 @@
           <div class="city-clock" id="paris">
             <div class="city-date"">
               <div class="city">Paris</div>
+              <div class="date" id="date"></div>
+            </div>
+            <div class="time-element">
+              <span id="time"></span>
+              <span class="am-pm" id="am-pm"></span>
+            </div>
+          </div>
+          <div class="city-clock" id="seoul">
+            <div class="city-date"">
+              <div class="city">Seoul</div>
               <div class="date" id="date"></div>
             </div>
             <div class="time-element">

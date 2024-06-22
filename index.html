@@ -23,15 +23,27 @@
       </header>
       <main>
         <select name="city" id="city-select-dropdown">
-          <option value="">Choose city</option>
-          <option value="new-york">New York</option>
-          <option value="london">London</option>
-          <option value="sydney">Sydney</option>
+          <option value="" id="empty-option">Choose city</option>
+          <option value="America/New_York">New York</option>
+          <option value="Europe/London">London</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Atlantic/Reykjavik">Reykjavík</option>
         </select>
-        <section class="clock-section">
-          <div class="city-clock">
+        <section class="clock-section" id="clock-section">
+          <div class="city-clock" id="los-angeles">
             <div class="city-date">
-              <div class="city">New York</div>
+              <div class="city">Los Angeles</div>
+              <div class="date" id="date"></div>
+            </div>
+            <div class="time-element">
+              <span id="time"></span>
+              <span class="am-pm" id="am-pm"></span>
+            </div>
+          </div>
+          <div class="city-clock" id="paris">
+            <div class="city-date"">
+              <div class="city">Paris</div>
               <div class="date" id="date"></div>
             </div>
             <div class="time-element">

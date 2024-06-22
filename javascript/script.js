@@ -28,6 +28,9 @@ function updateTime() {
 
 function updateCity(event) {
   let timezone = event.target.value;
+  if (timezone === "current-location") {
+    timezone = moment.tz.guess();
+  }
   if (timezone !== undefined) {
     let clockSection = document.querySelector("#clock-section");
 

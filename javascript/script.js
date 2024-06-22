@@ -76,5 +76,5 @@ function refreshPage() {
   location.reload();
 }
 
-let worldClock = document.querySelector("#world-clock");
-worldClock.addEventListener("click", refreshPage);
+let defaultCitiesBtn = document.querySelector("#default-cities");
+defaultCitiesBtn.addEventListener("click", refreshPage);

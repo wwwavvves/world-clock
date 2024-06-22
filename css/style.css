@@ -17,7 +17,6 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 40px;
-  cursor: pointer;
 }
 
 #city-select-dropdown {
@@ -68,6 +67,14 @@ h1 {
 .am-pm {
   font-size: 16px;
   text-transform: uppercase;
+}
+
+#default-cities {
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 footer {
